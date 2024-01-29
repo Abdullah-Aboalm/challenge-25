@@ -121,6 +121,9 @@ ul {
     content: url("./assets/images/background-pattern-mobile.svg");
     height: 500px;
   }
+  body {
+    height: 80vh;
+  }
 }
 
 /* tablet */
