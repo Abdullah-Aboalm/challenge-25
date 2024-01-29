@@ -116,6 +116,7 @@ ul {
 @media screen and (max-device-width: 767px) {
   .card {
     width: 90%;
+    margin: 20px 0;
   }
   img.bg {
     content: url("./assets/images/background-pattern-mobile.svg");
@@ -128,7 +129,7 @@ ul {
   .card {
     width: 60%;
   }
-  img.bg {
+  /* img.bg {
     content: url("./assets/images/background-pattern-mobile.svg");
-  }
+  } */
 }
