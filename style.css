@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  background-color: #f9eeff;
+}
+
+/* background */
+
+img.bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* card */
+
+.card {
+  width: 35%;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.062);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 30px 20px 30px;
+  border-radius: 15px;
+}
+
+.card .head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card .head img {
+  margin-right: 20px;
+  width: 35px;
+}
+
+.card .head h1 {
+  font-size: 40px;
+}
+
+.card ul li:not(:first-of-type) {
+  padding-top: 15px;
+}
+
+.card ul li:not(:last-of-type) {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.card ul li .ask {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.card ul li .ask h3 {
+  font-size: 14px;
+  transition: .3s;
+  flex: 1;
+}
+
+.card ul li .ask h3:hover {
+  color: #af1ff2;
+}
+
+.card ul li .ask img {
+  margin-left: 20px;
+}
+
+.card ul li p {
+  margin-top: 10px;
+  line-height: 1.7;
+  color: #937490;
+  font-size: 14px;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  margin-bottom: 5px;
+  transition: .3s;
+}
+
+.answer.active {
+  max-height: 100px;
+}
+
+.icon.active {
+  content: url("./assets/images/icon-minus.svg");
+}
+
+/* end card */
+
+/* mobile */
+
+@media screen and (max-device-width: 767px) {
+  .card {
+    width: 90%;
+  }
+  img.bg {
+    content: url("./assets/images/background-pattern-mobile.svg");
+    height: 500px;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .card {
+    width: 50%;
+  }
+  img.bg {
+    content: url("./assets/images/background-pattern-mobile.svg");
+  }
+}
